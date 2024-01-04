@@ -1,0 +1,22 @@
+Relative Positioning:
+Elements with relative positioning are positioned relative to their normal position on the page.
+When you apply relative positioning to an element and then use properties like top, bottom, left, or right, it shifts the element from its original position based on these defined values, but it retains the space it originally occupied in the layout. Other elements on the page will not be affected by its new position.
+It's often used to fine-tune the placement of elements in relation to their default positions without affecting the layout flow.
+
+.relative {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+
+Absolute Positioning:
+Elements with absolute positioning are positioned relative to their closest positioned ancestor (an element with a position value other than static - relative, absolute, fixed, or sticky).
+Absolute positioning takes an element out of the normal document flow, meaning it doesn't occupy its original space. It can overlap with other elements unless additional spacing or positioning is used.
+When you set an element's position to absolute and then use properties like top, bottom, left, or right, it positions the element based on the closest positioned ancestor.
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
